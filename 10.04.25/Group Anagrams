@@ -1,0 +1,6 @@
+import re
+
+class Solution(object):
+    def lengthOfLastWord(self, s):
+        return len(re.findall(r"\w+", s)[-1])
+        
